@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.activityViewModels
 import md.sesrta.udianork.R
 import md.sesrta.udianork.databinding.FragmentGameBinding
@@ -36,102 +37,259 @@ class GameFragment : Fragment() {
             val arrayChestSixthRow = arrayOf(imageView21, imageView22, imageView23, imageView24)
 
             buttonStartAndStop.setOnClickListener {
-                model.startGame(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array = arrayChestFirstRow)
+                model.startGame(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array = arrayOf(
+                        arrayChestFirstRow,
+                        arrayChestSecondRow,
+                        arrayChestThirdRow,
+                        arrayChestForthRow,
+                        arrayChestFifthRow,
+                        arrayChestSixthRow
+                    )
+                )
             }
+
             imageView1.setOnClickListener {
-                model.chooseFirstChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFirstRow, array2 = arrayChestSecondRow)
+                model.chooseFirstChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFirstRow,
+                    array2 = arrayChestSecondRow,
+                    imageView = imageView1
+                )
             }
 
             imageView2.setOnClickListener {
-                model.chooseFirstChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFirstRow, array2 = arrayChestSecondRow)
+                model.chooseFirstChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFirstRow,
+                    array2 = arrayChestSecondRow,
+                    imageView = imageView2
+                )
             }
 
             imageView3.setOnClickListener {
-                model.chooseFirstChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFirstRow, array2 = arrayChestSecondRow)
+                model.chooseFirstChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFirstRow,
+                    array2 = arrayChestSecondRow,
+                    imageView = imageView3
+                )
             }
 
             imageView4.setOnClickListener {
-                model.chooseFirstChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFirstRow, array2 = arrayChestSecondRow)
+                model.chooseFirstChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFirstRow,
+                    array2 = arrayChestSecondRow,
+                    imageView = imageView4
+                )
             }
 
             imageView5.setOnClickListener {
-                model.chooseSecondChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSecondRow, array2 = arrayChestThirdRow)
+                model.chooseSecondChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSecondRow,
+                    array2 = arrayChestThirdRow
+                )
             }
 
             imageView6.setOnClickListener {
-                model.chooseSecondChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSecondRow, array2 = arrayChestThirdRow)
+                model.chooseSecondChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSecondRow,
+                    array2 = arrayChestThirdRow
+                )
             }
 
             imageView7.setOnClickListener {
-                model.chooseSecondChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSecondRow, array2 = arrayChestThirdRow)
+                model.chooseSecondChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSecondRow,
+                    array2 = arrayChestThirdRow
+                )
             }
 
             imageView8.setOnClickListener {
-                model.chooseSecondChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSecondRow, array2 = arrayChestThirdRow)
+                model.chooseSecondChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSecondRow,
+                    array2 = arrayChestThirdRow
+                )
             }
 
             imageView9.setOnClickListener {
-                model.chooseThirdChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestThirdRow, array2 = arrayChestForthRow)
+                model.chooseThirdChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestThirdRow,
+                    array2 = arrayChestForthRow
+                )
             }
 
             imageView10.setOnClickListener {
-                model.chooseThirdChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestThirdRow, array2 = arrayChestForthRow)
+                model.chooseThirdChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestThirdRow,
+                    array2 = arrayChestForthRow
+                )
             }
 
             imageView11.setOnClickListener {
-                model.chooseThirdChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestThirdRow, array2 = arrayChestForthRow)
+                model.chooseThirdChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestThirdRow,
+                    array2 = arrayChestForthRow
+                )
             }
 
             imageView12.setOnClickListener {
-                model.chooseThirdChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestThirdRow, array2 = arrayChestForthRow)
+                model.chooseThirdChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestThirdRow,
+                    array2 = arrayChestForthRow
+                )
             }
 
             imageView13.setOnClickListener {
-                model.chooseForthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestForthRow, array2 = arrayChestFifthRow)
+                model.chooseForthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestForthRow,
+                    array2 = arrayChestFifthRow
+                )
             }
 
             imageView14.setOnClickListener {
-                model.chooseForthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestForthRow, array2 = arrayChestFifthRow)
+                model.chooseForthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestForthRow,
+                    array2 = arrayChestFifthRow
+                )
             }
 
             imageView15.setOnClickListener {
-                model.chooseForthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestForthRow, array2 = arrayChestFifthRow)
+                model.chooseForthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestForthRow,
+                    array2 = arrayChestFifthRow
+                )
             }
 
             imageView16.setOnClickListener {
-                model.chooseForthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestForthRow, array2 = arrayChestFifthRow)
+                model.chooseForthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestForthRow,
+                    array2 = arrayChestFifthRow
+                )
             }
 
             imageView17.setOnClickListener {
-                model.chooseFifthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFifthRow, array2 = arrayChestSixthRow)
+                model.chooseFifthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFifthRow,
+                    array2 = arrayChestSixthRow
+                )
             }
 
             imageView18.setOnClickListener {
-                model.chooseFifthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFifthRow, array2 = arrayChestSixthRow)
+                model.chooseFifthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFifthRow,
+                    array2 = arrayChestSixthRow
+                )
             }
 
             imageView19.setOnClickListener {
-                model.chooseFifthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFifthRow, array2 = arrayChestSixthRow)
+                model.chooseFifthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFifthRow,
+                    array2 = arrayChestSixthRow
+                )
             }
 
             imageView20.setOnClickListener {
-                model.chooseFifthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestFifthRow, array2 = arrayChestSixthRow)
+                model.chooseFifthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestFifthRow,
+                    array2 = arrayChestSixthRow
+                )
             }
 
             imageView21.setOnClickListener {
-                model.chooseSixthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSixthRow)
+                model.chooseSixthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSixthRow
+                )
             }
 
             imageView22.setOnClickListener {
-                model.chooseSixthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSixthRow)
+                model.chooseSixthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSixthRow
+                )
             }
 
             imageView23.setOnClickListener {
-                model.chooseSixthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSixthRow)
+                model.chooseSixthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSixthRow
+                )
             }
 
             imageView24.setOnClickListener {
-                model.chooseSixthChest(button = buttonStartAndStop, textViewScore = textViewScore, textViewTotalScore = textViewTotalScore, array1 = arrayChestSixthRow)
+                model.chooseSixthChest(
+                    button = buttonStartAndStop,
+                    textViewScore = textViewScore,
+                    textViewTotalScore = textViewTotalScore,
+                    array1 = arrayChestSixthRow
+                )
             }
         }
     }

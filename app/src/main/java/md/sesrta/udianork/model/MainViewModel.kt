@@ -2,6 +2,7 @@ package md.sesrta.udianork.model
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,7 +14,7 @@ import md.sesrta.udianork.R
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     var digitScore = 0
-    var totalScore = 0
+    private var totalScore = 0
     private var isStart = false
     private var isFirstRowEnable = false
     private var isSecondRowEnable = false
@@ -24,7 +25,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private  lateinit var navController: NavController
 
     @SuppressLint("SetTextI18n")
-    fun chooseFirstChest(button: Button, textViewTotalScore: TextView, textViewScore: TextView, array1: Array<ImageView>, array2: Array<ImageView>) {
+    fun chooseFirstChest(button: Button, textViewTotalScore: TextView, textViewScore: TextView, array1: Array<ImageView>, array2: Array<ImageView>, imageView: ImageView) {
         if (isStart && isFirstRowEnable) {
             if (probablyMoney(90)) {
                 digitScore = 100
@@ -39,6 +40,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             }
             isFirstRowEnable = false
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
+            val anim = AnimationUtils.loadAnimation(getApplication(), R.anim.move_chest)
+            imageView.startAnimation(anim)
             array1.forEach { it.setImageResource(R.drawable.chest2transparent) }
         }
     }
@@ -136,6 +139,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             }
             isStart = false
             isSixthRowEnable = false
+            digitScore = 0
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
             array1.forEach { it.setImageResource(R.drawable.chest2transparent) }
         }
@@ -156,18 +160,26 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     @SuppressLint("SetTextI18n", "ResourceType")
-    fun startGame(button: Button, textViewTotalScore: TextView, textViewScore: TextView, array: Array<ImageView>) {
+     fun startGame(button: Button, textViewTotalScore: TextView, textViewScore: TextView, vararg array: Array<ImageView>) {
         isStart = !isStart
         if (isStart) {
             button.text = getStringForRes(R.string.stop)
             isFirstRowEnable = true
-            array.forEach { it.setImageResource(R.drawable.chest2) }
+            array[0].forEach { it.setImageResource(R.drawable.chest2) }
         } else {
             button.text = getStringForRes(R.string.start)
             totalScore += digitScore
             textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
             digitScore = 0
             textViewScore.text = getStringForRes(R.string.score)
+            array[0].forEach { it.setImageResource(R.drawable.chest2transparent) }
+            array[1].forEach { it.setImageResource(R.drawable.chest2transparent) }
+            array[2].forEach { it.setImageResource(R.drawable.chest2transparent) }
+            array[3].forEach { it.setImageResource(R.drawable.chest2transparent) }
+            array[4].forEach { it.setImageResource(R.drawable.chest2transparent) }
+            array[5].forEach { it.setImageResource(R.drawable.chest2transparent) }
         }
     }
+
+
 }
