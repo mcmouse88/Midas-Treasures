@@ -35,20 +35,21 @@ class GameFragment : Fragment() {
             val arrayChestForthRow = arrayOf(imageView13, imageView14, imageView15, imageView16)
             val arrayChestFifthRow = arrayOf(imageView17, imageView18, imageView19, imageView20)
             val arrayChestSixthRow = arrayOf(imageView21, imageView22, imageView23, imageView24)
+            val arrayAllChest = arrayOf(
+                imageView1, imageView2, imageView3, imageView4,
+                imageView5, imageView6, imageView7, imageView8,
+                imageView9, imageView10, imageView11, imageView12,
+                imageView13, imageView14, imageView15, imageView16,
+                imageView17, imageView18, imageView19, imageView20,
+                imageView21, imageView22, imageView23, imageView24
+            )
 
             buttonStartAndStop.setOnClickListener {
                 model.startGame(
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array = arrayOf(
-                        arrayChestFirstRow,
-                        arrayChestSecondRow,
-                        arrayChestThirdRow,
-                        arrayChestForthRow,
-                        arrayChestFifthRow,
-                        arrayChestSixthRow
-                    )
+                    array = arrayOf(arrayChestFirstRow, arrayAllChest)
                 )
             }
 
@@ -57,9 +58,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFirstRow,
-                    array2 = arrayChestSecondRow,
-                    imageView = imageView1
+                    imageView = imageView1,
+                    array = arrayOf(arrayChestFirstRow, arrayChestSecondRow, arrayAllChest)
                 )
             }
 
@@ -68,9 +68,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFirstRow,
-                    array2 = arrayChestSecondRow,
-                    imageView = imageView2
+                    imageView = imageView2,
+                    array = arrayOf(arrayChestFirstRow, arrayChestSecondRow, arrayAllChest)
                 )
             }
 
@@ -79,9 +78,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFirstRow,
-                    array2 = arrayChestSecondRow,
-                    imageView = imageView3
+                    imageView = imageView3,
+                    array = arrayOf(arrayChestFirstRow, arrayChestSecondRow, arrayAllChest)
                 )
             }
 
@@ -90,9 +88,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFirstRow,
-                    array2 = arrayChestSecondRow,
-                    imageView = imageView4
+                    imageView = imageView4,
+                    array = arrayOf(arrayChestFirstRow, arrayChestSecondRow, arrayAllChest)
                 )
             }
 
@@ -101,8 +98,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSecondRow,
-                    array2 = arrayChestThirdRow
+                    imageView = imageView5,
+                    array = arrayOf(arrayChestSecondRow, arrayChestThirdRow, arrayAllChest)
                 )
             }
 
@@ -111,8 +108,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSecondRow,
-                    array2 = arrayChestThirdRow
+                    imageView = imageView6,
+                    array = arrayOf(arrayChestSecondRow, arrayChestThirdRow, arrayAllChest)
                 )
             }
 
@@ -121,8 +118,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSecondRow,
-                    array2 = arrayChestThirdRow
+                    imageView = imageView7,
+                    array = arrayOf(arrayChestSecondRow, arrayChestThirdRow, arrayAllChest)
                 )
             }
 
@@ -131,8 +128,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSecondRow,
-                    array2 = arrayChestThirdRow
+                    imageView = imageView8,
+                    array = arrayOf(arrayChestSecondRow, arrayChestThirdRow, arrayAllChest)
                 )
             }
 
@@ -141,8 +138,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestThirdRow,
-                    array2 = arrayChestForthRow
+                    imageView = imageView9,
+                    array = arrayOf(arrayChestThirdRow, arrayChestForthRow, arrayAllChest)
                 )
             }
 
@@ -151,8 +148,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestThirdRow,
-                    array2 = arrayChestForthRow
+                    imageView = imageView10,
+                    array = arrayOf(arrayChestThirdRow, arrayChestForthRow, arrayAllChest)
                 )
             }
 
@@ -161,8 +158,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestThirdRow,
-                    array2 = arrayChestForthRow
+                    imageView = imageView11,
+                    array = arrayOf(arrayChestThirdRow, arrayChestForthRow, arrayAllChest)
                 )
             }
 
@@ -171,8 +168,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestThirdRow,
-                    array2 = arrayChestForthRow
+                    imageView = imageView12,
+                    array = arrayOf(arrayChestThirdRow, arrayChestForthRow, arrayAllChest)
                 )
             }
 
@@ -181,8 +178,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestForthRow,
-                    array2 = arrayChestFifthRow
+                    imageView = imageView13,
+                    array = arrayOf(arrayChestForthRow, arrayChestFifthRow, arrayAllChest)
                 )
             }
 
@@ -191,8 +188,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestForthRow,
-                    array2 = arrayChestFifthRow
+                    imageView = imageView14,
+                    array = arrayOf(arrayChestForthRow, arrayChestFifthRow, arrayAllChest)
                 )
             }
 
@@ -201,8 +198,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestForthRow,
-                    array2 = arrayChestFifthRow
+                    imageView = imageView15,
+                    array = arrayOf(arrayChestForthRow, arrayChestFifthRow, arrayAllChest)
                 )
             }
 
@@ -211,8 +208,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestForthRow,
-                    array2 = arrayChestFifthRow
+                    imageView = imageView16,
+                    array = arrayOf(arrayChestForthRow, arrayChestFifthRow, arrayAllChest)
                 )
             }
 
@@ -221,8 +218,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFifthRow,
-                    array2 = arrayChestSixthRow
+                    imageView = imageView17,
+                    array = arrayOf(arrayChestFifthRow, arrayChestSixthRow, arrayAllChest)
                 )
             }
 
@@ -231,8 +228,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFifthRow,
-                    array2 = arrayChestSixthRow
+                    imageView = imageView18,
+                    array = arrayOf(arrayChestFifthRow, arrayChestSixthRow, arrayAllChest)
                 )
             }
 
@@ -241,8 +238,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFifthRow,
-                    array2 = arrayChestSixthRow
+                    imageView = imageView19,
+                    array = arrayOf(arrayChestFifthRow, arrayChestSixthRow, arrayAllChest)
                 )
             }
 
@@ -251,8 +248,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestFifthRow,
-                    array2 = arrayChestSixthRow
+                    imageView = imageView20,
+                    array = arrayOf(arrayChestFifthRow, arrayChestSixthRow, arrayAllChest)
                 )
             }
 
@@ -261,7 +258,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSixthRow
+                    imageView = imageView21,
+                    array = arrayAllChest
                 )
             }
 
@@ -270,7 +268,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSixthRow
+                    imageView = imageView22,
+                    array = arrayAllChest
                 )
             }
 
@@ -279,7 +278,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSixthRow
+                    imageView = imageView23,
+                    array = arrayAllChest
                 )
             }
 
@@ -288,7 +288,8 @@ class GameFragment : Fragment() {
                     button = buttonStartAndStop,
                     textViewScore = textViewScore,
                     textViewTotalScore = textViewTotalScore,
-                    array1 = arrayChestSixthRow
+                    imageView = imageView24,
+                    array = arrayAllChest
                 )
             }
         }

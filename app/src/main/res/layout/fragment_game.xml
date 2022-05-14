@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.GameFragment">
+    tools:context=".screens.GameFragment"
+    android:background="@drawable/test_selector" >
 
     <TextView
         android:id="@+id/textViewTotalScore"
@@ -65,28 +66,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -109,28 +110,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -153,28 +154,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -197,28 +198,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -241,28 +242,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <TextView
                 android:id="@+id/textView36"
@@ -286,28 +287,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <ImageView
                 android:id="@+id/imageView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/chest2transparent" />
+                android:src="@drawable/new_chest2_negative" />
 
             <TextView
                 android:id="@+id/textView41"
