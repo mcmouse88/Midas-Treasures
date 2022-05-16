@@ -6,22 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screens.MenuFragment"
-    android:background="@drawable/test_selector" >
+    android:background="@drawable/main_background" >
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonQuitGame"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/new_button"
+        android:drawableEnd="@drawable/ic_exit"
+        android:fontFamily="@font/chango"
         android:text="@string/quit_game"
-        android:layout_gravity="center" />
+        android:textColor="@color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonStartGame"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/new_button"
+        android:textColor="@color/white"
         android:foregroundGravity="center"
-        android:layout_marginBottom="32dp"
-        android:text="@string/start_game"
-        android:layout_gravity="center" />
+        android:drawableEnd="@drawable/ic_play_arrow"
+        android:fontFamily="@font/chango"
+        android:text="@string/start_game" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOption"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/options"
+        android:background="@drawable/new_button"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_options"
+        android:fontFamily="@font/chango" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="@string/main_menu"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 </FrameLayout>

@@ -31,6 +31,10 @@ class MenuFragment : Fragment() {
                 launchDestination(R.id.gameFragment)
             }
 
+            buttonOption.setOnClickListener {
+                launchDestination(R.id.optionsFragment)
+            }
+
             buttonQuitGame.setOnClickListener {
                 activity?.finishAffinity()
                 exitProcess(0);
@@ -38,7 +42,7 @@ class MenuFragment : Fragment() {
         }
     }
 
-    fun launchDestination(destinationId: Int, args: Bundle? = null) {
+    private fun launchDestination(destinationId: Int, args: Bundle? = null) {
         findNavController().navigate(
             destinationId,
             args,

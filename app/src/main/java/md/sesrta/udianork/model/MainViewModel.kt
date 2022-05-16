@@ -2,6 +2,7 @@ package md.sesrta.udianork.model
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.media.Image
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
@@ -39,9 +40,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore = 100
                 isSecondRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach { it.setImageResource(R.drawable.new_chest2_trancse) }
+                array[1].forEach {
+                    it.setImageResource(R.drawable.new_chest2_trancse)
+                    it.isClickable = true
+                }
             } else {
                 button.text = getStringForRes(R.string.start)
+                button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
                 totalScore += digitScore
                 textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
                 digitScore = 0
@@ -49,11 +54,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 array[2].forEach {
                     it.setImageResource(R.drawable.new_chest2_negative)
                     it.startAnimation(returnChest)
+                    it.isClickable = false
                 }
             }
             isFirstRowEnable = false
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
-            array[0].forEach { it.setImageResource(R.drawable.new_chest2_negative) }
+            array[0].forEach {
+                it.setImageResource(R.drawable.new_chest2_negative)
+                it.isClickable = false
+            }
         }
     }
 
@@ -70,9 +79,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 500
                 isThirdRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach { it.setImageResource(R.drawable.new_chest2_trancse) }
+                array[1].forEach {
+                    it.setImageResource(R.drawable.new_chest2_trancse)
+                    it.isClickable = true
+                }
             } else {
                 button.text = getStringForRes(R.string.start)
+                button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
                 totalScore += digitScore
                 textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
                 digitScore = 0
@@ -80,11 +93,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 array[2].forEach {
                     it.setImageResource(R.drawable.new_chest2_negative)
                     it.startAnimation(returnChest)
+                    it.isClickable = false
                 }
             }
             isSecondRowEnable = false
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
-            array[0].forEach { it.setImageResource(R.drawable.new_chest2_negative) }
+            array[0].forEach {
+                it.setImageResource(R.drawable.new_chest2_negative)
+                it.isClickable = false
+            }
 
         }
     }
@@ -102,9 +119,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 2_000
                 isForthRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach { it.setImageResource(R.drawable.new_chest2_trancse) }
+                array[1].forEach {
+                    it.setImageResource(R.drawable.new_chest2_trancse)
+                    it.isClickable = true
+                }
             } else {
                 button.text = getStringForRes(R.string.start)
+                button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
                 totalScore += digitScore
                 textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
                 digitScore = 0
@@ -112,11 +133,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 array[2].forEach {
                     it.setImageResource(R.drawable.new_chest2_negative)
                     it.startAnimation(returnChest)
+                    it.isClickable = false
                 }
             }
             isThirdRowEnable = false
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
-            array[0].forEach { it.setImageResource(R.drawable.new_chest2_negative) }
+            array[0].forEach {
+                it.setImageResource(R.drawable.new_chest2_negative)
+                it.isClickable = false
+            }
         }
     }
 
@@ -133,9 +158,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 10_000
                 isFifthRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach { it.setImageResource(R.drawable.new_chest2_trancse) }
+                array[1].forEach {
+                    it.setImageResource(R.drawable.new_chest2_trancse)
+                    it.isClickable = true
+                }
             } else {
                 button.text = getStringForRes(R.string.start)
+                button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
                 totalScore += digitScore
                 textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
                 digitScore = 0
@@ -143,11 +172,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 array[2].forEach {
                     it.setImageResource(R.drawable.new_chest2_negative)
                     it.startAnimation(returnChest)
+                    it.isClickable = false
                 }
             }
             isForthRowEnable = false
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
-            array[0].forEach { it.setImageResource(R.drawable.new_chest2_negative) }
+            array[0].forEach {
+                it.setImageResource(R.drawable.new_chest2_negative)
+                it.isClickable = false
+            }
         }
     }
 
@@ -164,21 +197,28 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 50_000
                 isSixthRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach { it.setImageResource(R.drawable.new_chest2_trancse) }
+                array[1].forEach {
+                    it.setImageResource(R.drawable.new_chest2_trancse)
+                    it.isClickable = true
+                }
             } else {
                 button.text = getStringForRes(R.string.start)
+                button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
                 totalScore += digitScore
                 textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
                 digitScore = 0
                 isStart = false
                 array[2].forEach {
-                    // it.setImageResource(R.drawable.new_chest2_negative)
                     it.startAnimation(returnChest)
+                    it.isClickable = false
                 }
             }
             isFifthRowEnable = false
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
-            array[0].forEach { it.setImageResource(R.drawable.new_chest2_negative) }
+            array[0].forEach {
+                it.setImageResource(R.drawable.new_chest2_negative)
+                it.isClickable = false
+            }
         }
     }
 
@@ -188,14 +228,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         textViewTotalScore: TextView,
         textViewScore: TextView,
         imageView: ImageView,
-        array: Array<ImageView>
+        array: Array<ImageView>,
     ) {
         if (isStart && isSixthRowEnable) {
             if (probablyMoney(30)) {
                 digitScore += 50_000
                 imageView.run { startAnimation(moveChest) }
             } else {
-                button.text = getStringForRes(R.string.start)
                 totalScore += digitScore
                 textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
                 digitScore = 0
@@ -204,9 +243,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             isSixthRowEnable = false
             digitScore = 0
             textViewScore.text = "${getStringForRes(R.string.score)} $digitScore"
+            button.text = getStringForRes(R.string.start)
+            button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
             array.forEach {
                 it.setImageResource(R.drawable.new_chest2_negative)
                 it.startAnimation(returnChest)
+                it.isClickable = false
             }
         }
     }
@@ -236,21 +278,25 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         isStart = !isStart
         if (isStart) {
             button.text = getStringForRes(R.string.stop)
+            button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_stop, 0)
             isFirstRowEnable = true
-            array[0].forEach { it.setImageResource(R.drawable.new_chest2_trancse) }
+            array[0].forEach {
+                it.setImageResource(R.drawable.new_chest2_trancse)
+                it.isClickable = true
+            }
         } else {
             button.text = getStringForRes(R.string.start)
+
             totalScore += digitScore
             textViewTotalScore.text = "${getStringForRes(R.string.total_score)} $totalScore"
             digitScore = 0
             textViewScore.text = getStringForRes(R.string.score)
-
+            button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
             array[1].forEach {
                 it.setImageResource(R.drawable.new_chest2_negative)
                 it.startAnimation(returnChest)
+                it.isClickable = false
             }
         }
     }
-
-
 }
