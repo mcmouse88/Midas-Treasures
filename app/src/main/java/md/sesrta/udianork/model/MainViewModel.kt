@@ -2,7 +2,8 @@ package md.sesrta.udianork.model
 
 import android.annotation.SuppressLint
 import android.app.Application
-import android.media.Image
+import android.os.Handler
+import android.os.Looper
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
@@ -40,10 +41,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore = 100
                 isSecondRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach {
-                    it.setImageResource(R.drawable.new_chest2_trancse)
-                    it.isClickable = true
-                }
+                Handler(Looper.myLooper()!!).postDelayed({
+                    array[1].forEach {
+                        it.setImageResource(R.drawable.new_chest2_trancse)
+                        it.isClickable = true
+                    }
+                }, 800)
             } else {
                 button.text = getStringForRes(R.string.start)
                 button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
@@ -79,10 +82,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 500
                 isThirdRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach {
-                    it.setImageResource(R.drawable.new_chest2_trancse)
-                    it.isClickable = true
-                }
+                Handler(Looper.myLooper()!!).postDelayed({
+                    array[1].forEach {
+                        it.setImageResource(R.drawable.new_chest2_trancse)
+                        it.isClickable = true
+                    }
+                }, 800)
             } else {
                 button.text = getStringForRes(R.string.start)
                 button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
@@ -119,10 +124,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 2_000
                 isForthRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach {
-                    it.setImageResource(R.drawable.new_chest2_trancse)
-                    it.isClickable = true
-                }
+                Handler(Looper.myLooper()!!).postDelayed({
+                    array[1].forEach {
+                        it.setImageResource(R.drawable.new_chest2_trancse)
+                        it.isClickable = true
+                    }
+                }, 800)
             } else {
                 button.text = getStringForRes(R.string.start)
                 button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
@@ -158,10 +165,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 10_000
                 isFifthRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach {
-                    it.setImageResource(R.drawable.new_chest2_trancse)
-                    it.isClickable = true
-                }
+                Handler(Looper.myLooper()!!).postDelayed({
+                    array[1].forEach {
+                        it.setImageResource(R.drawable.new_chest2_trancse)
+                        it.isClickable = true
+                    }
+                }, 800)
             } else {
                 button.text = getStringForRes(R.string.start)
                 button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
@@ -197,10 +206,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 digitScore += 50_000
                 isSixthRowEnable = true
                 imageView.run { startAnimation(moveChest) }
-                array[1].forEach {
-                    it.setImageResource(R.drawable.new_chest2_trancse)
-                    it.isClickable = true
-                }
+                Handler(Looper.myLooper()!!).postDelayed({
+                    array[1].forEach {
+                        it.setImageResource(R.drawable.new_chest2_trancse)
+                        it.isClickable = true
+                    }
+                }, 800)
             } else {
                 button.text = getStringForRes(R.string.start)
                 button.setCompoundDrawablesWithIntrinsicBounds( 0, 0, R.drawable.ic_play_arrow, 0)
@@ -260,14 +271,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private fun probablyMoney(percent: Int): Boolean {
         return (Math.random() < percent / 100.0)
     }
-
-    fun navigateFragment(fragment: FragmentActivity) {
-        val navHost =
-            fragment.supportFragmentManager.findFragmentById(R.id.fragmentView) as NavHostFragment
-        navController = navHost.navController
-        navController.navigate(R.id.splashFragment)
-    }
-
+    
     @SuppressLint("SetTextI18n", "ResourceType")
     fun startGame(
         button: Button,

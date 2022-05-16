@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import md.sesrta.udianork.R
 import md.sesrta.udianork.databinding.FragmentOptionsBinding
 
 class OptionsFragment : Fragment() {
