@@ -8,10 +8,8 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.AndroidViewModel
 import androidx.navigation.NavController
-import androidx.navigation.fragment.NavHostFragment
 import md.sesrta.udianork.R
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
@@ -271,7 +269,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private fun probablyMoney(percent: Int): Boolean {
         return (Math.random() < percent / 100.0)
     }
-    
+
     @SuppressLint("SetTextI18n", "ResourceType")
     fun startGame(
         button: Button,
